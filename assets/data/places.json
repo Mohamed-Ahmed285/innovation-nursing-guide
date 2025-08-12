@@ -1,0 +1,206 @@
+{
+  "places": [
+    {
+      "id": "hall-006",
+      "type": "hall",
+      "pos": { "x": 22, "y": 35 },
+      "image": "assets/images/places/006.jpg",
+      "name": { "ar": "المدرج 006", "en": "Hall 006" },
+      "desc": { 
+        "ar": "مدرج مخصص لمحاضرات طلاب التمريض، يقع في مبنى الفنون الجميلة.", 
+        "en": "A lecture hall for nursing students, located in the Fine Arts Building." 
+      },
+      "location": { "ar": "مبنى الفنون الجميلة - الدور الأرضي", "en": "Ground floor, Fine Arts Building" }
+    },
+    {
+      "id": "hall-208",
+      "type": "hall",
+      "pos": { "x": 22, "y": 35 },
+      "image": "assets/images/places/208.jpg",
+      "name": { "ar": "المدرج 208", "en": "Hall 208" },
+      "desc": { 
+        "ar": "مدرج مخصص لمحاضرات طلاب التمريض، مزود بالتجهيزات التعليمية.", 
+        "en": "A lecture hall for nursing students, equipped for educational activities." 
+      },
+      "location": { "ar": "مبنى التمريض - الدور الثاني", "en": "Second floor, Nursing Building" }
+    },
+    {
+      "id": "hall-102",
+      "type": "hall",
+      "pos": { "x": 22, "y": 35 },
+      "image": "assets/images/places/102.jpg",
+      "name": { "ar": "المدرج 102", "en": "Hall 102" },
+      "desc": { 
+        "ar": "مدرج مخصص لمحاضرات طلاب التمريض، يقع في مبنى الفنون الجميلة.", 
+        "en": "A lecture hall for nursing students, located in the Fine Arts Building." 
+      },
+      "location": { "ar": "مبنى الفنون الجميلة - الدور الأول", "en": "First floor, Fine Arts Building" }
+    },
+    {
+      "id": "hall-303",
+      "type": "hall",
+      "pos": { "x": 45, "y": 28 },
+      "image": "assets/images/places/303.jpg",
+      "name": { "ar": "المدرج 303", "en": "Hall 303" },
+      "desc": { 
+        "ar": "مدرج مخصص لمحاضرات طلاب التمريض، مزود بوسائل تعليمية حديثة.", 
+        "en": "A lecture hall for nursing students, equipped with modern teaching tools." 
+      },
+      "location": { "ar": "مبنى التمريض - الدور الثالث", "en": "Third floor, Nursing Building" }
+
+    },    
+    {
+      "id": "ped-nursing-lab-1",
+      "type": "lab",
+      "pos": { "x": 65, "y": 40 },
+      "image": "assets/images/places/labs/ped-nursing-lab-1.jpg",
+      "name": { "ar": "معمل تمريض الأطفال 1", "en": "Pediatric Nursing Lab 1" },
+      "desc": { 
+        "ar": "معمل لتدريب الطلاب على أساسيات تمريض الأطفال.", 
+        "en": "Lab for training students on basic pediatric nursing skills." 
+      },
+      "location": { "ar": "مبني تمريض الدور الثاني", "en": "Second floor, Nursing Building" }
+    },
+    {
+      "id": "ped-nursing-lab-2",
+      "type": "lab",
+      "pos": { "x": 65, "y": 40 },
+      "image": "assets/images/places/labs/ped-nursing-lab-2.jpg",
+      "name": { "ar": "معمل تمريض الأطفال 2", "en": "Pediatric Nursing Lab 2" },
+      "desc": { 
+        "ar": "معمل مجهز لتدريب مهارات التمريض الخاصة برعاية الأطفال.", 
+        "en": "Lab equipped for training pediatric nursing care skills." 
+      },
+      "location": { "ar": "مبني تمريض الدور الثاني", "en": "Second floor, Nursing Building" }
+    },
+    {
+      "id": "Obest. Gyn. Nursing Lab 1",
+      "type": "lab",
+      "pos": { "x": 30, "y": 60 },
+      "image": "assets/images/places/labs/obest.gyn-1.jpg",
+      "name": { "ar": "معمل تمريض النساء والتوليد 1", "en": "Obstetrics & Gynecology Nursing Lab 1" },
+      "desc": { 
+        "ar": "معمل لتدريب الطلاب على رعاية النساء والحوامل.", 
+        "en": "Lab for training students in women's and maternity care." 
+      },
+      "location": { "ar": "مبني تمريض الدور الثاني", "en": "Second floor, Nursing Building" }
+    },
+    {
+      "id": "Obest. Gyn. Nursing Lab 2",
+      "type": "lab",
+      "pos": { "x": 30, "y": 60 },
+      "image": "assets/images/places/labs/obest.gyn-2.jpg",
+      "name": { "ar": "معمل تمريض النساء والتوليد 2", "en": "Obstetrics & Gynecology Nursing Lab 2" },
+      "desc": { 
+        "ar": "معمل متخصص في تدريب مهارات تمريض النساء والتوليد.", 
+        "en": "Lab specialized in obstetrics and gynecology nursing skills." 
+      },
+      "location": { "ar": "مبني تمريض الدور الثاني", "en": "Second floor, Nursing Building" }
+    },
+    {
+      "id": "Critical care nursing Lab 1",
+      "type": "lab",
+      "pos": { "x": 30, "y": 60 },
+      "image": "assets/images/places/labs/critical-lab-1.jpg",
+      "name": { "ar": "معمل تمريض الحالات الحرجة 1", "en": "Critical Care Nursing Lab 1" },
+      "desc": { 
+        "ar": "معمل مجهز لتدريب مهارات التمريض في رعاية الحالات الحرجة.", 
+        "en": "Lab equipped for training critical care nursing skills." 
+      },
+      "location": { "ar": "مبني تمريض الدور الثالث", "en": "Third floor, Nursing Building" }
+    },
+    {
+      "id": "Med.Surg Nursing Lab 1",
+      "type": "lab",
+      "pos": { "x": 30, "y": 60 },
+      "image": "assets/images/places/labs/med.surg-1.jpg",
+      "name": { "ar": "معمل تمريض الباطنة والجراحة 1", "en": "Medical-Surgical Nursing Lab 1" },
+      "desc": { 
+        "ar": "معمل لتدريب الطلاب على مهارات التمريض الباطني والجراحي.", 
+        "en": "Lab for training students in medical and surgical nursing skills." 
+      },
+      "location": { "ar": "مبني تمريض الدور الثالث", "en": "Third floor, Nursing Building" }
+    },
+    {
+      "id": "Med.Surg Nursing Lab 2",
+      "type": "lab",
+      "pos": { "x": 30, "y": 60 },
+      "image": "assets/images/places/labs/med.surg-2.jpg",
+      "name": { "ar": "معمل تمريض الباطنة والجراحة 2", "en": "Medical-Surgical Nursing Lab 2" },
+      "desc": { 
+        "ar": "معمل مجهز لتدريب مهارات التمريض الباطني والجراحي المتقدمة.", 
+        "en": "Lab equipped for advanced medical and surgical nursing skills." 
+      },
+      "location": { "ar": "مبني تمريض الدور الثالث", "en": "Third floor, Nursing Building" }
+    },
+    {
+      "id": "Fundamental Nursing Lab 1",
+      "type": "lab",
+      "pos": { "x": 30, "y": 60 },
+      "image": "assets/images/places/labs/fundamental-nursing-lab-1.jpg",
+      "name": { "ar": "معمل أساسيات التمريض 1", "en": "Fundamental Nursing Lab 1" },
+      "desc": { 
+        "ar": "معمل لتدريب الطلاب على أساسيات ومهارات التمريض.", 
+        "en": "Lab for training students in basic nursing skills." 
+      },
+      "location": { "ar": "مبني تمريض الدور الثالث", "en": "Third floor, Nursing Building" }
+    },
+    {
+      "id": "Fundamental Nursing Lab 2",
+      "type": "lab",
+      "pos": { "x": 30, "y": 60 },
+      "image": "assets/images/places/labs/fundamental-nursing-lab-2.jpg",
+      "name": { "ar": "معمل أساسيات التمريض 2", "en": "Fundamental Nursing Lab 2" },
+      "desc": { 
+        "ar": "معمل مجهز لتدريب الطلاب على مهارات التمريض الأساسية.", 
+        "en": "Lab equipped for training students in essential nursing skills." 
+      },
+      "location": { "ar": "مبني تمريض الدور الثالث", "en": "Third floor, Nursing Building" }
+    },
+    {
+      "id": "office-dean",
+      "type": "office",
+      "pos": { "x": 78, "y": 32 },
+      "image": "assets/images/places/dean office.jpg",
+      "name": { "ar": "مكتب العميد", "en": "Dean Office" },
+      "desc": { "ar": "للاستفسارات الإدارية والتنسيق.", "en": "Administrative inquiries and coordination." },
+      "location": { "ar": "مبني تمريض الدور الثاني", "en": "Second floor, Nursing Building" }
+    },
+    {
+      "id": "office-3",
+      "type": "office",
+      "pos": { "x": 57, "y": 80 },
+      "image": "assets/images/places/office-3.jpg",
+      "name": { "ar": "مكتب أعضاء هيئة التدريس", "en": "Faculty Council Office" },
+      "desc": { "ar": "خدمات الطلاب والتسجيل.", "en": "Student services and enrollment." },
+      "location": { "ar": "مبني تمريض الدور الثاني", "en": "Second floor, Nursing Building" }
+    },
+    {
+      "id": "library",
+      "type": "office",
+      "pos": { "x": 54, "y": 70 },
+      "image": "assets/images/places/library.jpg",
+      "name": { "ar": "المكتبة الجامعية", "en": "University Library" },
+      "desc": { "ar": "مكتبة متكاملة مع أحدث المراجع والمؤلفات.", "en": "Comprehensive library with latest references and publications." },
+      "location": { "ar": "مبني تمريض الدور الثاني", "en": "Second floor, Nursing Building" }
+    },
+    {
+      "id": "seminar-a",
+      "type": "seminar",
+      "pos": { "x": 14, "y": 55 },
+      "image": "assets/images/places/seminar-1.jpg",
+      "name": { "ar": "قاعة سمينار 1", "en": "Seminar Room 1" },
+      "desc": { "ar": "قاعة متوسطة للعروض وورش العمل.", "en": "Mid-sized room for talks and workshops." },
+      "location": { "ar": "مبني تمريض الدور الثاني", "en": "Second floor, Nursing Building" }
+    },
+    {
+      "id": "seminar-b",
+      "type": "seminar",
+      "pos": { "x": 85, "y": 58 },
+      "image": "assets/images/places/seminar-2.jpg",
+      "name": { "ar": "قاعة سمينار 2", "en": "Seminar Room 2" },
+      "desc": { "ar": "مزودة بشاشة عرض وصوتيات.", "en": "Equipped with display and audio." },
+      "location": { "ar": "مبني تمريض الدور الثالث", "en": "Third floor, Nursing Building" }
+    }
+  ]
+} 
