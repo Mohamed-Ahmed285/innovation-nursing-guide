@@ -325,7 +325,6 @@ html[dir="rtl"] input[type="email"] {
     margin-top: 1rem;
     padding: 1rem;
     border: 1px solid rgba(101, 75, 153, 0.1);
-    /* Fix for mobile scroll issue - use absolute instead of fixed to prevent content shift */
     position: absolute;
     top: 100%;
     left: 0;
@@ -333,7 +332,6 @@ html[dir="rtl"] input[type="email"] {
     z-index: 1050;
     max-height: calc(100vh - 76px);
     overflow-y: auto;
-    /* Ensure menu appears above content */
     box-shadow: 0 8px 32px rgba(0,0,0,0.15);
   }
   
@@ -368,6 +366,7 @@ html[dir="rtl"] input[type="email"] {
     color: var(--color-primary);
   }
   
+  /* Hide underline on mobile since we use background instead */
   .navbar-nav .nav-link.active::after {
     display: none;
   }
@@ -466,162 +465,7 @@ html[dir="rtl"] input[type="email"] {
   }
 }
 
-/* Mobile Navigation Improvements */
-@media (max-width: 991.98px) {
-  /* Navbar container improvements */
-  .navbar .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  
-  /* Brand improvements for mobile */
-  .navbar-brand {
-    flex: 1;
-    margin-right: 0;
-  }
-  
-  .navbar-brand .brand-text {
-    font-size: 1rem;
-  }
-  
-  /* Toggle button improvements */
-  .navbar-toggler {
-    border: 2px solid var(--color-primary);
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    transition: all 0.2s ease;
-  }
-  
-  .navbar-toggler:focus {
-    box-shadow: 0 0 0 0.25rem rgba(101, 75, 153, 0.25);
-  }
-  
-  .navbar-toggler:hover {
-    background-color: var(--color-primary);
-    border-color: var(--color-primary);
-  }
-  
-  .navbar-toggler:hover .navbar-toggler-icon {
-    filter: brightness(0) invert(1);
-  }
-  
-  /* Collapsed menu improvements */
-  .navbar-collapse {
-    background: white;
-    border-radius: 0.75rem;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-    margin-top: 1rem;
-    padding: 1rem;
-    border: 1px solid rgba(101, 75, 153, 0.1);
-  }
-  
-  /* Navigation items mobile improvements */
-  .navbar-nav {
-    gap: 0.5rem;
-  }
-  
-  .navbar-nav .nav-item {
-    border-bottom: 1px solid rgba(101, 75, 153, 0.1);
-  }
-  
-  .navbar-nav .nav-item:last-child {
-    border-bottom: none;
-  }
-  
-  .navbar-nav .nav-link {
-    padding: 1rem 0.75rem;
-    border-radius: 0.5rem;
-    font-size: 1.1rem;
-    transition: all 0.2s ease;
-    position: relative;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    background-color: rgba(101, 75, 153, 0.05);
-    transform: translateX(4px);
-  }
-  
-  .navbar-nav .nav-link.active {
-    background-color: rgba(101, 75, 153, 0.1);
-    color: var(--color-primary);
-  }
-  
-  .navbar-nav .nav-link.active::after {
-    display: none;
-  }
-  
-  /* Dropdown improvements for mobile */
-  .dropdown-menu.video-dropdown {
-    width: 100%;
-    max-width: none;
-    margin-top: 0.5rem;
-    border: 1px solid rgba(101, 75, 153, 0.1);
-    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-  }
-  
-  .dropdown-menu.video-dropdown .ratio {
-    border-radius: 0.5rem;
-  }
-  
-  /* Language toggle button mobile improvements */
-  .navbar-nav .nav-item:last-child {
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 2px solid rgba(101, 75, 153, 0.2);
-  }
-  
-  #langToggle {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 0.5rem;
-  }
-  
-  /* RTL specific mobile improvements */
-  html[dir="rtl"] .navbar-nav .nav-link:hover {
-    transform: translateX(-4px);
-  }
-  
-  /* Mobile header improvements */
-  .page-header {
-    padding: 2rem 0;
-  }
-  
-  .page-header h1 {
-    font-size: 1.75rem;
-  }
-  
-  .page-header p {
-    font-size: 1rem;
-  }
-  
-  /* Mobile dropdown improvements */
-  .dropdown-toggle::after {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-  }
-  
-  /* Better mobile spacing */
-  .navbar-nav .nav-item + .nav-item {
-    margin-top: 0.25rem;
-  }
-  
-  /* Mobile navbar shadow and backdrop */
-  .navbar {
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.95) !important;
-  }
-  
-  /* Smooth mobile menu animation */
-  .navbar-collapse {
-    transition: all 0.3s ease;
-  }
-  
-  .navbar-collapse.collapsing {
-    transition: all 0.3s ease;
-  }
-}
+
 
 /* Small mobile devices */
 @media (max-width: 576px) {

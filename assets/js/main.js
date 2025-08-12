@@ -220,10 +220,31 @@
   }
 
   function highlightActiveNav() {
-    const path = location.pathname.split('/').pop() || 'index.html';
+    // Get current path and handle different URL formats
+    let currentPath = location.pathname;
+    
+    // Handle root path
+    if (currentPath === '/' || currentPath === '') {
+      currentPath = 'index.html';
+    } else {
+      // Extract filename from path
+      currentPath = currentPath.split('/').pop();
+    }
+    
+    // Remove any query parameters or hash
+    currentPath = currentPath.split('?')[0].split('#')[0];
+    
+    // Clear all active states first
+    document.querySelectorAll('.navbar .nav-link').forEach(link => {
+      link.classList.remove('active');
+    });
+    
+    // Set active state for current page
     document.querySelectorAll('.navbar .nav-link').forEach(link => {
       const href = link.getAttribute('href');
-      if (href === path) link.classList.add('active');
+      if (href && href === currentPath) {
+        link.classList.add('active');
+      }
     });
   }
 
