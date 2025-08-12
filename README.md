@@ -5,6 +5,16 @@ The site provides detailed information about lecture halls, laboratories, office
 
 ---
 
+## Live Demo
+
+try it : https://faculty-of-nursing-innovation-university.pages.dev/
+
+
+
+
+
+---
+
 ## Features
 
 
