@@ -32,7 +32,7 @@ The site provides detailed information about lecture halls, laboratories, office
 
 ### Version Control & Hosting
 - **Git & GitHub** – Version control and collaboration  
-- Cloudflare Pages** – Static site hosting
+- **Cloudflare Pages** – Static site hosting
 
 ### Tools
 - **VS Code** – Development environment  
@@ -59,5 +59,6 @@ The site provides detailed information about lecture halls, laboratories, office
 ## Contribution
 
 Contributions and improvements are welcome.  
+
 
 
