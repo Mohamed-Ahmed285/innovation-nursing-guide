@@ -222,17 +222,39 @@
   function highlightActiveNav() {
     // Get current path and handle different URL formats
     let currentPath = location.pathname;
+    let currentHref = location.href;
     
-    // Handle root path
+    // Handle different hosting scenarios
+    let currentPage = '';
+    
+    // Method 1: Try to extract from pathname
     if (currentPath === '/' || currentPath === '') {
-      currentPath = 'index.html';
+      currentPage = 'index.html';
     } else {
       // Extract filename from path
-      currentPath = currentPath.split('/').pop();
+      currentPage = currentPath.split('/').pop();
+    }
+    
+    // Method 2: If pathname method didn't work, try href
+    if (!currentPage || currentPage === '') {
+      const urlParts = currentHref.split('/');
+      currentPage = urlParts[urlParts.length - 1];
+    }
+    
+    // Method 3: If still no result, try to get from current URL
+    if (!currentPage || currentPage === '') {
+      currentPage = window.location.pathname.split('/').pop() || 'index.html';
     }
     
     // Remove any query parameters or hash
-    currentPath = currentPath.split('?')[0].split('#')[0];
+    currentPage = currentPage.split('?')[0].split('#')[0];
+    
+    // Fallback to index.html if still empty
+    if (!currentPage || currentPage === '') {
+      currentPage = 'index.html';
+    }
+    
+    console.log('Current page detected:', currentPage); // Debug log
     
     // Clear all active states first
     document.querySelectorAll('.navbar .nav-link').forEach(link => {
@@ -242,10 +264,31 @@
     // Set active state for current page
     document.querySelectorAll('.navbar .nav-link').forEach(link => {
       const href = link.getAttribute('href');
-      if (href && href === currentPath) {
+      if (href && href === currentPage) {
         link.classList.add('active');
+        console.log('Setting active for:', href); // Debug log
       }
     });
+    
+    // If no active link was found, try alternative matching
+    const activeLinks = document.querySelectorAll('.navbar .nav-link.active');
+    if (activeLinks.length === 0) {
+      console.log('No active link found, trying alternative matching...'); // Debug log
+      
+      // Try matching without .html extension
+      const currentPageWithoutExt = currentPage.replace('.html', '');
+      
+      document.querySelectorAll('.navbar .nav-link').forEach(link => {
+        const href = link.getAttribute('href');
+        if (href) {
+          const hrefWithoutExt = href.replace('.html', '');
+          if (hrefWithoutExt === currentPageWithoutExt) {
+            link.classList.add('active');
+            console.log('Setting active (without extension) for:', href); // Debug log
+          }
+        }
+      });
+    }
   }
 
   function renderCards() {
@@ -348,7 +391,22 @@
         document.dispatchEvent(new CustomEvent('languageChanged'));
       }
     });
+    
+    // Call highlightActiveNav immediately
     highlightActiveNav();
+    
+    // Also call it after a short delay to handle any dynamic content loading
+    setTimeout(highlightActiveNav, 100);
+    
+    // Call it again when the page is fully loaded
+    window.addEventListener('load', highlightActiveNav);
+    
+    // Handle browser back/forward navigation
+    window.addEventListener('popstate', highlightActiveNav);
+    
+    // Handle hash changes
+    window.addEventListener('hashchange', highlightActiveNav);
+    
     wireContactForm();
     // Stop iframe playback when dropdown is hidden
     document.querySelectorAll('.video-dropdown').forEach(function (menu) {
