@@ -226,7 +226,7 @@ html[dir="rtl"] input[type="email"] {
 
 .academic-level-card .card-img-wrapper {
   position: relative;
-  height: 280px;
+  height: 400px;
   overflow: hidden;
 }
 
@@ -673,7 +673,7 @@ html[dir="rtl"] input[type="email"] {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .academic-level-card .card-img-wrapper {
-    height: 240px;
+    height: 400px;
   }
   
   .academic-level-card .card-img-overlay {
@@ -687,7 +687,7 @@ html[dir="rtl"] input[type="email"] {
 
 @media (max-width: 576px) {
   .academic-level-card .card-img-wrapper {
-    height: 200px;
+    height: 400px;
   }
 }
 
