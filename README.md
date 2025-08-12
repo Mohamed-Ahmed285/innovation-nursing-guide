@@ -1,73 +1,80 @@
-# كلية التمريض - جامعة الابتكار
+# Faculty of Nursing - Innovation University Website
 
-موقع إلكتروني لكلية التمريض بجامعة الابتكار يعرض معلومات عن المدرجات والمعامل والمكاتب وقاعات السمينار والمستويات الأكاديمية.
+A responsive and bilingual (Arabic/English) website for the Faculty of Nursing at Innovation University.  
+The site provides detailed information about lecture halls, laboratories, offices, seminar rooms, and academic levels.
 
-## الميزات
+---
 
-- **المدرجات**: عرض قائمة المدرجات المتاحة
-- **المعامل**: عرض المعامل التعليمية والبحثية
-- **المكاتب**: عرض مكاتب الإدارات وأعضاء هيئة التدريس
-- **قاعات السمينار**: عرض القاعات المجهزة للعروض وورش العمل
-- **المستويات الأكاديمية**: الوصول للمواد الدراسية حسب المستوى الأكاديمي
-- **اتصل بنا**: نموذج للتواصل مع الكلية
+## Features
 
-## المستويات الأكاديمية
 
-تم استبدال الخريطة التفاعلية بصفحة المستويات الأكاديمية التي تحتوي على أربعة مستويات:
 
-1. **السنة الأولى (Freshman)**
-2. **السنة الثانية (Sophomore)**
-3. **السنة الثالثة (Junior)**
-4. **السنة الرابعة (Senior)**
 
-### إعداد روابط Google Drive
 
-لتخصيص روابط Google Drive لكل مستوى أكاديمي:
 
-1. افتح ملف `assets/data/academic-levels.json`
-2. استبدل `YOUR_FRESHMAN_FOLDER_ID` برقم مجلد Google Drive للسنة الأولى
-3. استبدل `YOUR_SOPHOMORE_FOLDER_ID` برقم مجلد Google Drive للسنة الثانية
-4. استبدل `YOUR_JUNIOR_FOLDER_ID` برقم مجلد Google Drive للسنة الثالثة
-5. استبدل `YOUR_SENIOR_FOLDER_ID` برقم مجلد Google Drive للسنة الرابعة
+- **Lecture Halls** – List of available halls  
+- **Laboratories** – Educational and research labs  
+- **Offices** – Administration and faculty offices  
+- **Seminar Rooms** – Equipped spaces for workshops and presentations  
+- **Academic Levels** – Access study materials for four levels:  
+  - Freshman  
+  - Sophomore  
+  - Junior  
+  - Senior  
+- **Contact Form**
 
-### كيفية الحصول على معرف مجلد Google Drive
+---
 
-1. افتح مجلد Google Drive في المتصفح
-2. انسخ الرابط من شريط العنوان
-3. الرابط سيكون بالشكل: `https://drive.google.com/drive/folders/FOLDER_ID_HERE`
-4. انسخ الجزء `FOLDER_ID_HERE` واستبدله في ملف JSON
+## Tech Stack
 
-## التقنيات المستخدمة
 
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- Bootstrap 5.3.3
-- Font Awesome (للأيقونات)
 
-## دعم اللغات
 
-- العربية (RTL)
-- الإنجليزية (LTR)
+### Frontend
+- **HTML5** – Page structure and content  
+- **CSS3** – Styling and layout  
+- **JavaScript (ES6+)** – Interactivity and DOM manipulation  
+- **Bootstrap 5.3.3** – Responsive layout and UI components  
+- **Font Awesome** – Iconography  
+- **RTL & LTR Support** – Bilingual compatibility
 
-## التشغيل
+### Version Control & Hosting
+- **Git & GitHub** – Version control and collaboration  
+- **Cloudflare Pages** – Static site hosting
 
-1. قم بتنزيل الملفات
-2. افتح `index.html` في المتصفح
-3. أو استضف الملفات على خادم ويب
+### Tools
+- **VS Code** – Development environment  
+- **JSON** – Store and manage resource links
 
-## التخصيص
 
-يمكن تخصيص:
-- الألوان من خلال متغيرات CSS في `assets/css/styles.css`
-- النصوص من خلال ملف `assets/js/main.js`
-- الصور من خلال مجلد `assets/images/`
-- روابط Google Drive من خلال ملف `assets/data/academic-levels.json`
 
-## المساهمة
+---
 
-نرحب بالمساهمات والتحسينات! يرجى التواصل معنا عبر صفحة "اتصل بنا".
+## Getting Started
 
-## الترخيص
 
-© 2025 كلية التمريض - جامعة الابتكار. جميع الحقوق محفوظة. 
+
+
+1. Download the files  
+2. Open `index.html` in your browser  
+3. Or host the files on any web server
+
+---
+
+
+
+
+
+## Customization
+
+- **Colors** – Edit `assets/css/styles.css`  
+- **Texts** – Edit `assets/js/main.js`  
+- **Images** – Replace in `assets/images/`
+
+---
+
+## Contribution
+
+
+
+Contributions and improvements are welcome.  
