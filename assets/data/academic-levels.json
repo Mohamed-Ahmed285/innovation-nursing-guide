@@ -4,7 +4,7 @@
       "id": "freshman",
       "name": "Freshman",
       "name_ar": "السنة الأولى",
-      "image": "assets/images/(Freshman).jpg",
+      "image": "assets/images/1.jpg",
       "drive_link": "https://drive.google.com/drive/folders/1WeZtNqYAYtaJc9D9V0K3O9uBx7c1NuXB?usp=drive_link",
       "description": "Study materials and resources for first-year nursing students",
       "description_ar": "المواد الدراسية والموارد لطلاب التمريض في السنة الأولى"
@@ -13,7 +13,7 @@
       "id": "sophomore",
       "name": "Sophomore",
       "name_ar": "السنة الثانية",
-      "image": "assets/images/(sophomore).jpg",
+      "image": "assets/images/2.jpg",
       "drive_link": "https://drive.google.com/drive/folders/1zhRuabKhX-2fptDdrqCCVfCNbCOnOTs8?usp=drive_link",
       "description": "Study materials and resources for second-year nursing students",
       "description_ar": "المواد الدراسية والموارد لطلاب التمريض في السنة الثانية"
@@ -22,7 +22,7 @@
       "id": "junior",
       "name": "Junior",
       "name_ar": "السنة الثالثة",
-      "image": "assets/images/(Junior).jpg",
+      "image": "assets/images/4.jpg",
       "drive_link": "https://drive.google.com/drive/folders/1P0WACltBoiDMZQW7_gPfWYI_r1FGGzSD",
       "description": "Study materials and resources for third-year nursing students",
       "description_ar": "المواد الدراسية والموارد لطلاب التمريض في السنة الثالثة"
@@ -31,7 +31,7 @@
       "id": "senior",
       "name": "Senior",
       "name_ar": "السنة الرابعة",
-      "image": "assets/images/(Senior).jpg",
+      "image": "assets/images/3.jpg",
       "drive_link": "https://drive.google.com/drive/folders/17PtG68om4Z2aFCwMmbHbAzyV_iqHQBqp",
       "description": "Study materials and resources for fourth-year nursing students",
       "description_ar": "المواد الدراسية والموارد لطلاب التمريض في السنة الرابعة"

@@ -13,6 +13,7 @@
       nav_seminar: 'Seminar Rooms',
       nav_map: 'Academic Levels',
       nav_contact: 'Contact',
+      nav_gallery:'Gallery',
       nav_video: 'Intro Video',
       hero_title: 'Faculty of Nursing - Innovation University',
       hero_sub: 'Excellence in education, innovative research, and community service',
@@ -49,13 +50,13 @@
       location_text: 'Innovation University, Egypt',
       footer_copy: '© 2025 All rights reserved',
       empty_state: 'No items found.',
-      // Academic Levels translations
       freshman: 'Freshman',
       freshman_ar: 'السنة الأولى',
       sophomore: 'Sophomore',
       sophomore_ar: 'السنة الثانية',
       junior: 'Junior',
       junior_ar: 'السنة الثالثة',
+      title_gallery:'Gallery',
       senior: 'Senior',
       senior_ar: 'السنة الرابعة',
       freshman_desc: 'Study materials and resources for first-year nursing students',
@@ -67,9 +68,13 @@
       senior_desc: 'Study materials and resources for fourth-year nursing students',
       senior_desc_ar: 'المواد الدراسية والموارد لطلاب التمريض في السنة الرابعة',
       access_materials: 'Access Materials',
-      access_materials_ar: 'الوصول للمواد'
+      access_materials_ar: 'الوصول للمواد',
+      sub_gallery:'Photos of college events and activities',
+      nav_facilities:'Places'
     },
     ar: {
+      nav_facilities:'الاماكن',
+      sub_gallery:'صور من أنشطة وفعاليات الكلية',
       site_title: 'كلية التمريض - جامعة الابتكار',
       site_title_short: 'كلية التمريض - جامعة الابتكار',
       site_short: 'كلية التمريض',
@@ -77,6 +82,7 @@
       nav_halls: 'المدرجات',
       nav_labs: 'المعامل',
       nav_offices: 'المكاتب',
+      nav_gallery:'معرض الصور',
       nav_seminar: 'قاعات السمينار',
       nav_map: 'المستويات الأكاديمية',
       nav_contact: 'اتصل بنا',
@@ -116,6 +122,7 @@
       location_text: 'جامعة الابتكار، مصر',
       footer_copy: '© 2025 جميع الحقوق محفوظة',
       empty_state: 'لا توجد عناصر.',
+      title_gallery:'معرض الصور',
       // Academic Levels translations
       freshman: 'السنة الأولى',
       freshman_ar: 'السنة الأولى',
@@ -266,14 +273,14 @@
       const href = link.getAttribute('href');
       if (href && href === currentPage) {
         link.classList.add('active');
-        console.log('Setting active for:', href); // Debug log
+        console.log('Setting active for:', href); 
       }
     });
     
     // If no active link was found, try alternative matching
     const activeLinks = document.querySelectorAll('.navbar .nav-link.active');
     if (activeLinks.length === 0) {
-      console.log('No active link found, trying alternative matching...'); // Debug log
+      console.log('No active link found, trying alternative matching...'); 
       
       // Try matching without .html extension
       const currentPageWithoutExt = currentPage.replace('.html', '');
@@ -284,7 +291,7 @@
           const hrefWithoutExt = href.replace('.html', '');
           if (hrefWithoutExt === currentPageWithoutExt) {
             link.classList.add('active');
-            console.log('Setting active (without extension) for:', href); // Debug log
+            console.log('Setting active (without extension) for:', href);
           }
         }
       });
@@ -500,3 +507,48 @@
     loadPlacesFromJson();
   });
 })(); 
+
+        const galleryImages = [
+            "assets/images/gallery/gallery (1).jpg",
+            "assets/images/gallery/gallery (2).jpg",
+            "assets/images/gallery/gallery (3).jpg",
+            "assets/images/gallery/gallery (4).jpg",
+            "assets/images/gallery/gallery (5).jpg",
+            "assets/images/gallery/gallery (6).jpg",
+            "assets/images/gallery/gallery (7).jpg",
+            "assets/images/gallery/gallery (8).jpg",
+            "assets/images/gallery/gallery (9).jpg",
+            "assets/images/gallery/gallery (10).jpg",
+            "assets/images/gallery/gallery (11).jpg",
+            "assets/images/gallery/gallery (12).jpg"
+        ];
+
+        // Render gallery
+        const galleryGrid = document.getElementById('galleryGrid');
+        galleryImages.forEach((src, i) => {
+            const col = document.createElement('div');
+            col.className = "col-6 col-md-4 col-lg-3";
+            col.innerHTML = `
+          <div class="card gallery-card shadow-sm h-100">
+            <img src="${src}" class="gallery-img w-100" alt="صورة ${i + 1}" loading="lazy" onclick="openLightbox('${src}')" />
+          </div>
+        `;
+            galleryGrid.appendChild(col);
+        });
+
+        // Lightbox logic
+        function openLightbox(src) {
+            document.getElementById('lightboxImg').src = src;
+            document.getElementById('galleryLightbox').classList.add('active');
+        }
+        function closeLightbox() {
+            document.getElementById('galleryLightbox').classList.remove('active');
+            document.getElementById('lightboxImg').src = '';
+        }
+        // Close on ESC or click outside
+        document.getElementById('galleryLightbox').addEventListener('click', function (e) {
+            if (e.target === this) closeLightbox();
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === "Escape") closeLightbox();
+        });
